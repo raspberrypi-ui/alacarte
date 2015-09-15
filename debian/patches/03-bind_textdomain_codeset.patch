@@ -1,0 +1,21 @@
+Debian #552528
+
+Index: alacarte-3.7.3/Alacarte/MainWindow.py
+===================================================================
+--- alacarte-3.7.3.orig/Alacarte/MainWindow.py	2013-01-15 17:15:36.972735767 -0800
++++ alacarte-3.7.3/Alacarte/MainWindow.py	2013-01-15 17:15:36.968735768 -0800
+@@ -23,12 +23,13 @@
+ import sys
+ import cgi
+ import os
+-import gettext
++import gettext, locale
+ import shutil
+ 
+ from Alacarte import config
+ gettext.bindtextdomain(config.GETTEXT_PACKAGE, config.localedir)
+ gettext.textdomain(config.GETTEXT_PACKAGE)
++locale.bind_textdomain_codeset(config.GETTEXT_PACKAGE,'UTF-8')
+ 
+ _ = gettext.gettext
+ from Alacarte.MenuEditor import MenuEditor

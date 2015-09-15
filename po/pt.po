@@ -1,0 +1,147 @@
+# alacarte's Portuguese translation.
+# Copyright © 2006, 2007 alacarte
+# This file is distributed under the same license as the alacarte package.
+# Duarte Loreto <happyguy_pt@hotmail.com>, 2006, 2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 2.18\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=alacarte&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-12-18 13:49+0000\n"
+"PO-Revision-Date: 2014-03-02 17:51+0100\n"
+"Last-Translator: Tiago S. <almosthumane@portugalmail.pt>\n"
+"Language-Team: Portuguese <gnome_pt@yahoogroups.com>\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: ../Alacarte/MainWindow.py:155
+msgid "Name"
+msgstr "Nome"
+
+#: ../Alacarte/MainWindow.py:168
+msgid "Show"
+msgstr "Apresentar"
+
+#: ../Alacarte/MainWindow.py:176
+msgid "Item"
+msgstr "Item"
+
+#: ../Alacarte/ItemEditor.py:86
+msgid "Choose an icon"
+msgstr "Escolha um ícone"
+
+#: ../Alacarte/ItemEditor.py:205
+msgid "Choose a command"
+msgstr "Escolha um comando"
+
+#: ../data/alacarte.desktop.in.in.h:1 ../data/alacarte.ui.h:1
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: ../data/alacarte.desktop.in.in.h:2
+#| msgid "Change which applications are shown on the main menu"
+msgid "Add or remove applications from the main menu"
+msgstr "Adicionar ou remover aplicações do menu principal"
+
+#: ../data/alacarte.ui.h:2
+msgid "Restore the default menu layout"
+msgstr "Repor a disposição por omissão do menu"
+
+#: ../data/alacarte.ui.h:3
+msgid "_New Menu"
+msgstr "_Novo Menu"
+
+#: ../data/alacarte.ui.h:4
+msgid "Ne_w Item"
+msgstr "No_vo Item"
+
+#: ../data/alacarte.ui.h:5
+msgid "New _Separator"
+msgstr "Novo _Separador"
+
+#: ../data/alacarte.ui.h:6
+msgid "Move Down"
+msgstr "Mover Abaixo"
+
+#: ../data/alacarte.ui.h:7
+msgid "Move Up"
+msgstr "Mover Acima"
+
+#: ../data/launcher-editor.ui.h:1
+#, fuzzy
+#| msgid "Menu Properties"
+msgid "Launcher Properties"
+msgstr "Propriedades do Menu"
+
+#: ../data/launcher-editor.ui.h:2 ../data/directory-editor.ui.h:2
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../data/launcher-editor.ui.h:3
+msgid "Command:"
+msgstr "Comando:"
+
+#: ../data/launcher-editor.ui.h:4 ../data/directory-editor.ui.h:3
+msgid "Comment:"
+msgstr "Comentário:"
+
+#: ../data/launcher-editor.ui.h:5
+#| msgid "Browse..."
+msgid "Browse"
+msgstr "Procurar"
+
+#: ../data/launcher-editor.ui.h:6
+#| msgid "Run command in a terminal"
+msgid "Launch in Terminal?"
+msgstr "Executar na Consola?"
+
+#: ../data/directory-editor.ui.h:1
+#| msgid "Menu Properties"
+msgid "Directory Properties"
+msgstr "Propriedades do Diretório"
+
+#~ msgid "It_ems:"
+#~ msgstr "It_ens:"
+
+#~ msgid "Revert Changes?"
+#~ msgstr "Reverter as Alterações?"
+
+#~ msgid "Revert all menus to original settings?"
+#~ msgstr "Reverter todos os menus para as definições originais?"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Menus:"
+
+#~ msgid "_Revert to Original"
+#~ msgstr "_Reverter para o Original"
+
+#~ msgid "Menu Layout"
+#~ msgstr "Disposição do Menu"
+
+#~ msgid "A name is required."
+#~ msgstr "É necessário um nome."
+
+#~ msgid "A command is required."
+#~ msgstr "É necessário um comando."
+
+#~ msgid "Add, change, remove menu entries"
+#~ msgstr "Adicionar, alterar, remover entradas de menu"
+
+#~ msgid "Copyright © 2006 Travis Watkins"
+#~ msgstr "Copyright © 2006 Travis Watkins"
+
+#~ msgid "Icon:"
+#~ msgstr "Ícone:"
+
+#~ msgid "Menu Item Properties"
+#~ msgstr "Propriedades do Item de Menu"
+
+#~ msgid "Simple fd.o compliant menu editor"
+#~ msgstr "Editor de menus que respeita a definição da fd.o"
+
+#~ msgid "translator-credits"
+#~ msgstr "Duarte Loreto <happyguy_pt@hotmail.com>"

@@ -1,0 +1,174 @@
+# Greek, Modern (1453-) translation for alacarte
+# Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+# This file is distributed under the same license as the alacarte package.
+# Kostas Papadimas <pkst@gmx.net>, 2006.
+# Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: alacarte\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?product=alacar"
+"te&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2013-01-11 06:39+0000\n"
+"PO-Revision-Date: 2013-04-10 17:35+0300\n"
+"Last-Translator: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>\n"
+"Language-Team: team@gnome.gr\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Project-Style: gnome\n"
+
+#: ../Alacarte/MainWindow.py:159
+msgid "Name"
+msgstr "Όνομα"
+
+#: ../Alacarte/MainWindow.py:172
+msgid "Show"
+msgstr "Προβολή"
+
+#: ../Alacarte/MainWindow.py:180
+msgid "Item"
+msgstr "Αντικείμενο"
+
+#: ../Alacarte/ItemEditor.py:85
+msgid "Choose an icon"
+msgstr "Επιλογή εικονιδίου"
+
+#: ../Alacarte/ItemEditor.py:198
+msgid "Choose a command"
+msgstr "Επιλογή εντολής"
+
+#: ../data/alacarte.desktop.in.in.h:1 ../data/alacarte.ui.h:1
+msgid "Main Menu"
+msgstr "Κυρίως μενού"
+
+#: ../data/alacarte.desktop.in.in.h:2
+msgid "Add or remove applications from the main menu"
+msgstr "Προσθέστε ή αφαιρέστε εφαρμογές από το κύριο μενού"
+
+#: ../data/alacarte.ui.h:2
+msgid "Restore the default menu layout"
+msgstr "Επαναφορά της προεπιλεγμένης διάταξης"
+
+#: ../data/alacarte.ui.h:3
+msgid "_New Menu"
+msgstr "Νέο _μενού"
+
+#: ../data/alacarte.ui.h:4
+msgid "Ne_w Item"
+msgstr "Νέ_ο αντικείμενο"
+
+#: ../data/alacarte.ui.h:5
+msgid "New _Separator"
+msgstr "Νέο δια_χωριστικό"
+
+#: ../data/alacarte.ui.h:6
+msgid "Move Down"
+msgstr "Μετακίνηση κάτω"
+
+#: ../data/alacarte.ui.h:7
+msgid "Move Up"
+msgstr "Μετακίνηση πάνω"
+
+#: ../data/launcher-editor.ui.h:1
+#| msgid "Menu Properties"
+msgid "Launcher Properties"
+msgstr "Ιδιότητες εκκινητή"
+
+#: ../data/launcher-editor.ui.h:2 ../data/directory-editor.ui.h:2
+msgid "Name:"
+msgstr "Όνομα:"
+
+#: ../data/launcher-editor.ui.h:3
+msgid "Command:"
+msgstr "Εντολή:"
+
+#: ../data/launcher-editor.ui.h:4 ../data/directory-editor.ui.h:3
+msgid "Comment:"
+msgstr "Σχόλιο:"
+
+#: ../data/launcher-editor.ui.h:5
+#| msgid "Browse..."
+msgid "Browse"
+msgstr "Περιήγηση"
+
+#: ../data/launcher-editor.ui.h:6
+#| msgid "Run command in a terminal"
+msgid "Launch in Terminal?"
+msgstr "Εκκίνηση σε τερματικό;"
+
+#: ../data/directory-editor.ui.h:1
+#| msgid "Menu Properties"
+msgid "Directory Properties"
+msgstr "Ιδιότητες καταλόγου"
+
+#~ msgid "_Revert to Original"
+#~ msgstr "Επανα_φορά στο αρχικό"
+
+#~ msgid "Revert Changes?"
+#~ msgstr "Επαναφορά αλλαγών;"
+
+#~ msgid "Revert all menus to original settings?"
+#~ msgstr "Επαναφορά όλων των μενού στις αρχικές τους ρυθμίσεις;"
+
+#~ msgid "It_ems:"
+#~ msgstr "Αντι_κείμενα:"
+
+#~ msgid "_Menus:"
+#~ msgstr "_Μενού:"
+
+#~ msgid "A name is required."
+#~ msgstr "Απαιτείται ένα όνομα"
+
+#~ msgid "A command is required."
+#~ msgstr "Απαιτείται μια εντολή."
+
+#~ msgid "Add, change, remove menu entries"
+#~ msgstr "Προσθήκη, αλλαγή ή απομάκρυνση αντικειμένων μενού"
+
+#~ msgid "Menu Layout"
+#~ msgstr "Διάταξη μενού"
+
+#~ msgid "Alacarte Menu Editor"
+#~ msgstr "Επεξεργαστής μενού Alacarte"
+
+#~ msgid "Copyright © 2006 Travis Watkins"
+#~ msgstr "Πνευματικά δικαιώματα © 2006 Travis Watkins"
+
+#~ msgid "Icon:"
+#~ msgstr "Εικονίδιο:"
+
+#~ msgid "Menu Item Properties"
+#~ msgstr "Ιδιότητες αντικειμένου μενού"
+
+#~ msgid "Simple fd.o compliant menu editor"
+#~ msgstr "Ένας απλός επεξεργαστής μενού συμβατός με το freedesktop.org"
+
+#~ msgid "translator-credits"
+#~ msgstr "pkst@gnome.org"
+
+#~ msgid "A menu can't be named \"Other\"."
+#~ msgstr "Ένα μενού δεν μπορεί να έχει το όνομα \"Other\"."
+
+#~ msgid "Loading..."
+#~ msgstr "Φόρτωση..."
+
+#~ msgid "Visible"
+#~ msgstr "Ορατό"
+
+#~ msgid "Entry Editor"
+#~ msgstr "Επεξεργαστής καταχώρισης"
+
+#~ msgid "Icon Selector"
+#~ msgstr "Επιλογέας εικονιδίου"
+
+#~ msgid "Menu Editor"
+#~ msgstr "Επεξεργαστής μενού"
+
+#~ msgid "New _Entry"
+#~ msgstr "Νέα καταχώ_ριση"
+
+#~ msgid "_Delete"
+#~ msgstr "_Διαγραφή"

@@ -1,0 +1,2942 @@
+commit 56eca544f7351715fb74556c722a462618c84f2c
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:   2014-03-03
+
+    3.11.91
+
+M	NEWS
+M	configure.ac
+
+commit f72ae7a423ad374a4592416b835821d2f81f5ec4
+Author: Tiagosdot <almosthumane@portugalmail.pt>
+Date:	2014-03-03
+
+    Updated Portuguese translation
+
+M	po/pt.po
+
+commit 1166883e5d7fcfc24ce24b5f5b158053c59be7a2
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2014-02-27
+
+    Fix creating new items
+
+    Just as for menus, the code to insert the new item in
+    the right place was dropped in refactoring.
+    Bring it back.
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=725360
+
+M	Alacarte/MainWindow.py
+
+commit fd2c16c3929e57f5f2071ed3bc36f02c77930bab
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2014-02-26
+
+    Fix creating new menus
+
+    We were still creating the .directory file, but some
+    refactoring dropped the code that inserted the menu
+    into the menu tree. Bring it back.
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=725287
+
+M	Alacarte/MainWindow.py
+
+commit ba22fb0db948a65f19a22fc3e6f390d336a11eac
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2014-02-17
+
+    Make the Restore button work
+
+    The callback assumes that the first argument is 'self', not
+    the button that was clicked.
+
+M	data/alacarte.ui
+
+commit b5e7b5ce2a88b22d0fbce29556b9de11ec508d01
+Author: jonius <jonatan_zeidler@gmx.de>
+Date:	2014-02-12
+
+    Updated German translation
+
+M	po/de.po
+
+commit 1ea9a43902882dc726923f343e9f4da7f5bb3311
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2014-02-07
+
+    Add a man page
+
+    Because - why not ?
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=723860
+
+M	Makefile.am
+M	configure.ac
+A	man/Makefile.am
+A	man/alacarte.xml
+
+commit 44951ac87060f50ec003c08768c4b16d071bcb7f
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:	2014-01-23
+
+    Updated FSF's address
+
+M	acinclude.m4
+
+commit c519865ab627312f55984b7770360c770c5ec7fe
+Author: zhouxiaobo <zhouxiaobo.500@gmail.com>
+Date:	2014-01-11
+
+    Update Chinese simplified translation
+
+M	po/zh_CN.po
+
+commit 666d843940b9020c3ffb94e29b306ddcbc566ddf
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-12-12
+
+    ItemEditor: Make sure that we have a valid Exec line
+
+    Otherwise, gnome-menus / gio will ignore it.
+
+M	Alacarte/ItemEditor.py
+
+commit ccf5b18a16216bbc807d8eb1f425aa632fc76e1b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-12-12
+
+    ItemEditor: Fix validity check
+
+M	Alacarte/ItemEditor.py
+
+commit 73eaf9959f20fdab545237188672bf01f6e22fa1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-12-12
+
+    MainWindow: Add back main_window
+
+    We use this for the launchers
+
+M	Alacarte/MainWindow.py
+
+commit a05a5e8317740d2486a474196530d6dfc724303e
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2013-12-12
+
+    Remove the Help button
+
+    There is no help for alacarte, so don't show a non-functional
+    Help button.
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=720334
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit d31ce6b696cdae0e28aca49e0c8887b450114780
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-10-22
+
+    ItemEditor: Make sure to include the extension in the icon name
+
+M	Alacarte/ItemEditor.py
+
+commit 19aa0963733eedd7cef5bd968c14a2d2d881f3a1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-09-28
+
+    Remove generated INSTALL from repo
+
+    This was in .gitignore but it never got picked up properly.
+
+D	INSTALL
+
+commit 53a99e24b6647b0c5d039ebee0f2ccebf98b4300
+Author: Andika Triwidada <andika@gmail.com>
+Date:	2013-10-04
+
+    Updated Indonesian translation
+
+M	po/id.po
+
+commit 7c74167afe8618e4eb20e62b49a07981fa4d3f91
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-09-24
+
+    Release 3.10
+
+M	NEWS
+M	configure.ac
+
+commit 6a254633ad4e4911de4d0f4b37809fa8aa862afb
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-09-24
+
+    MainWindow: Remove some more unused imports
+
+M	Alacarte/MainWindow.py
+
+commit b7182fc332aab2cb40b722865eb41f3752fb75d8
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:	2013-09-21
+
+    Updated Latvian translatio
+
+M	po/lv.po
+
+commit ae599a8aed08a3fc7e4298870b69009aa933f57a
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-09-19
+
+    MainWindow: Re-add sys import
+
+    Spotted by Laruent Bigonville
+
+M	Alacarte/MainWindow.py
+
+commit 8b2bb349eddd0286266022ca1a58e39b131b5cc8
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2013-09-12
+
+    Updated Galician translations
+
+M	po/gl.po
+
+commit 68244327b1bf48bc044dbcfd0b2c0758eb7cb5eb
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-09-03
+
+    Release 3.9.91
+
+M	NEWS
+M	configure.ac
+
+commit 5c1cdb72587c0e1bf8e11aa4f0307b10da275358
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-08-29
+
+    Remove unused imports
+
+M	Alacarte/MainWindow.py
+
+commit 274d46d4061077da8c92236a98ba67f0df15703d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-08-29
+
+    Add python3 compatibility
+
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+
+commit d1920ecd9cbcbd9c486f9fe79a5379ab7cfb10d3
+Author: Stefano Facchini <stefano.facchini@gmail.com>
+Date:	2013-08-26
+
+    Quit on delete event
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=706821
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit fab91e9c2549bd284dda3cc0f2cffc7ae6c14f0f
+Author: Stefano Facchini <stefano.facchini@gmail.com>
+Date:	2013-08-26
+
+    Do not leave behind stale .desktop files
+
+    If the user clicked on Cancel in the Editor dialog, we should remove
+    the .desktop file we just copied to ~/.local/share/applications.
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=706807
+
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+
+commit 9100bfc0dbf13a13bf1b6ecd06f828063842c184
+Author: Stas Solovey <whats_up@tut.by>
+Date:	2013-05-14
+
+    Updated Russian translation
+
+M	po/ru.po
+
+commit f1c0f9708e8bbaf5759a558221b6fe8eaad2c6f1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-04-30
+
+    MenuEditor: Consistently use os.remove
+
+M	Alacarte/MenuEditor.py
+
+commit e8f3c734dab2958740b524b19f3c2d20206b6118
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-04-30
+
+    MenuEditor: Don't save after restoring default conditions
+
+M	Alacarte/MenuEditor.py
+
+commit 0d7f35124a0e23a0aaf57edf0e2d84f9ba1f12d8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-04-30
+
+    MenuEditor: Don't write binary data as unicode
+
+    g_keyfile_to_data returns binary data, not unicode
+
+M	Alacarte/MenuEditor.py
+
+commit ab7684aa5a68ce48d92fac41c223769290dc581c
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-04-30
+
+    MainWindow: Remove special formatting for hidden items
+
+M	Alacarte/MainWindow.py
+
+commit 8a7c5af8ac1b58b7e59ec9badd3af165a4d393e6
+Author: Dimitris Spingos <dmtrs32@gmail.com>
+Date:	2013-04-10
+
+    Updated Greek translation
+
+M	po/el.po
+
+commit c7ba207a7f3c80fd7d5acc3179c7c82df7f61d45
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:	2013-03-27
+
+    Updated Belarusian translation.
+
+M	po/be.po
+
+commit 0f071a3cb18fa6015d2e2a521ab15c71fd87ab84
+Author: Ville-Pekka Vainio <vpvainio@iki.fi>
+Date:	2013-03-23
+
+    Finnish translation update by Jiri Grönroos
+
+M	po/fi.po
+
+commit bd6088ff424a289cba0e4220fb749458bebaeb39
+Author: Joe Hansen <joedalton2@yahoo.dk>
+Date:	2013-03-12
+
+    Updated Danish translation
+
+M	po/da.po
+
+commit 374d20e583cdd31fc06f881bb0c062c7d895ef76
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-02-27
+
+    Release 3.7.90
+
+M	NEWS
+M	configure.ac
+
+commit d7a8469c5e643f4764fa958bf4c20eeb3bf798ec
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2013-02-27
+
+    Updated Norwegian bokmål translation
+
+M	po/nb.po
+
+commit 7abbf5f3d0a60e3d701c54782effd508da40a226
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:	2013-02-19
+
+    Updated Serbian translation
+
+M	po/sr.po
+M	po/sr@latin.po
+
+commit e76d7c6aba7ff86ef5113e75782f62155c555e64
+Author: Alexandre Franke <alexandre.franke@gmail.com>
+Date:	2013-02-19
+
+    Update French translation
+
+M	po/fr.po
+
+commit 4663f286992c950276f3ee2f931b02b6e2c1d5a0
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-02-15
+
+    MenuEditor: Fix error message on loading
+
+M	Alacarte/MenuEditor.py
+
+commit e3dd58308c4c860110c8e0f8d81ae9bfb897e80b
+Author: Ján Kyselica <kyselica.jan@gmail.com>
+Date:	2013-01-30
+
+    Updated slovak translation
+
+M	po/sk.po
+
+commit 47883cdcf645540a75a11dbae65d56566dd04bb9
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:	2013-01-29
+
+    Updated Lithuanian translation
+
+M	po/lt.po
+
+commit 9cdcbd47799472e4f98530719454ce4e2ccd4bac
+Author: Marek Černocký <marek@manet.cz>
+Date:	2013-01-22
+
+    Updated Czech translation
+
+M	po/cs.po
+
+commit 2f2e0b0bac463f545f409c67f1a15f5bf672529f
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-16
+
+    Use GLib.Error for catching errors
+
+    While gi._glib.GError works on my machine, it seems it's on track
+    to be removed, or doesn't work on some PyGObject builds.
+
+M	Alacarte/ItemEditor.py
+M	Alacarte/util.py
+
+commit 92b9cc7e28097fde7bff5e23c66865118bd8f07a
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:	2013-01-16
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 30a747e3122b5540231f71b80045b3c6b699057a
+Author: Enrico Nicoletto <liverig@gmail.com>
+Date:	2013-01-15
+
+    Updated Brazilian Portuguese translation
+
+M	po/pt_BR.po
+
+commit 6dfec50cf3a3e123556741ad278fd1f7a9d4625d
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2013-01-15
+
+    Fix a typo
+
+M	data/Makefile.am
+
+commit 009ec016f90a2ad29bb57017e19d5197ce9d975d
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2013-01-13
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit a9cf43aed17c59ab601b4dfdd9210c472a1f333f
+Author: Balázs Úr <urbalazs@src.gnome.org>
+Date:	2013-01-13
+
+    Updated Hungarian translation
+
+M	po/hu.po
+
+commit d71b7b52c4d9acc228528c8bab4af017343fb9f8
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2013-01-12
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 72ba83a0e26ecfdcce85a716a527c9550451a6d9
+Author: Dominique Leuenberger <dimstar@opensuse.org>
+Date:	2013-01-12
+
+    Enforce the use of Gtk 3.0; Gtk 2.0 is no introspecatble and thus
+    does not serve us anyway.
+
+    Fixes bug 691599.
+
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+
+commit fde7f5852ef85328880e676367ef0a684a33954e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    alacarte: Simplify the runner script
+
+    Make it simply call out to a main function in another module and
+    not much else.
+
+M	Alacarte/MainWindow.py
+M	alacarte.in
+
+commit fc8351173b470033e290f647c338f2801421c323
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Refactor and deduplicate code
+
+M	Alacarte/ItemEditor.py
+
+commit 75717fc6adc9d3e53267a840a8211bd1fb854be2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Make the dialog names the same
+
+M	Alacarte/ItemEditor.py
+M	data/directory-editor.ui
+M	data/launcher-editor.ui
+
+commit bf776b3d1768e48632c98cb69b94a7c05d060ed6
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    Make item editors modal on top of the main window
+
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+
+commit b2ade7ec88217fd05533903110da24c0e6d51a83
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    MainWindow: Use the appropriate editor when right-clicking on items
+
+M	Alacarte/MainWindow.py
+
+commit fb569f0e74b8b4c11e4381e5bead0515e8bc3b5b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Make sure to set the Type field
+
+M	Alacarte/ItemEditor.py
+
+commit 536c2c42ebfb58ef020027afe45a3b6bf81dd9f1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Add a directory editor as well
+
+M	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	data/Makefile.am
+A	data/directory-editor.ui
+M	po/POTFILES.in
+
+commit 41f6f9719de4c0558d07ba87088a20bafe631266
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Refactor out some synchronization setters
+
+M	Alacarte/ItemEditor.py
+
+commit a1c44988685182c54c87c68ca5b54013ee93d6aa
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Refactor out IconPicker UI
+
+M	Alacarte/ItemEditor.py
+
+commit 93e78f9c65e63ab5f67f80173fbcb17e5f224c1d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Make the name/exec fields required
+
+    You can't have a launcher without these.
+
+M	Alacarte/ItemEditor.py
+
+commit 73321bd25d719fa9d06c03ce6b93a0bb4b8a5b43
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Use an absolute path to the builder file
+
+M	Alacarte/ItemEditor.py
+
+commit 3a3dc69429bf7285995fe16779d32cd8bd4e0871
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Set the default focus correctly
+
+M	data/launcher-editor.ui
+
+commit c850f46beb1d60812e2163118951b8d285868c3e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    MainWindow: Use the new LauncherEditor for new files
+
+M	Alacarte/MainWindow.py
+
+commit 8f2d7cdc539861c8275a2c60b0a11713fa5428f7
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    ItemEditor: Handle missing files better
+
+    It turns out that we can't load missing files like this. Welp.
+
+M	Alacarte/ItemEditor.py
+
+commit 3c987dcd60f7f38e54f6f11f80c68f1ba68fe897
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-11
+
+    MainWindow: Remove unused variables
+
+    timer and edit_pool are now unused
+
+M	Alacarte/MainWindow.py
+
+commit 968c81bf5f9d4b8e3c71f33b142b8f77363378f1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    Add our own custom launcher editor
+
+    Replace simple uses of gnome-desktop-item-edit with our own desktop
+    file editor. For now, this only supports launcher entries -- menu
+    directories are not supported yet.
+
+A	Alacarte/ItemEditor.py
+M	Alacarte/MainWindow.py
+M	Alacarte/Makefile.am
+M	data/Makefile.am
+A	data/launcher-editor.ui
+M	po/POTFILES.in
+
+commit 1443592c3b1fb42014c80cdeff4de79794128bdf
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    util: Fix fillKeyFile
+
+    basestring is-a Sequence, so it needs to take priority.
+
+M	Alacarte/util.py
+
+commit 23f0318083e989112892260f4ad0cec047570cc0
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    MainWindow: Make property editing work again
+
+    It seems I was mixing up binary/unicode data again. Rather
+    than copy manually by reading into memory, just use shutil
+    to do a direct copy.
+
+M	Alacarte/MainWindow.py
+
+commit a3152fbddfed52231e59f20b7da96fa3caf47c7d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.ui: Put back menu items
+
+    It seems that Glade did not like GtkUIManager. I don't blame it.
+
+M	data/alacarte.ui
+
+commit 51034a4985bc6e78dfcf12cce50f7fcfbe471d55
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.ui: Do a lot of rearranging
+
+M	data/alacarte.ui
+
+commit cfcea0bb2e096df3bd6fed3f6afdba4dd3a2037e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.ui: Line up and clean up widgets
+
+M	data/alacarte.ui
+
+commit 0e524427139d1118fd15984673148dd60f7f847b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.ui: Clean up
+
+    Port to GTK+3-style GtkBuilder, and let glade do its number crunching
+
+M	data/alacarte.ui
+
+commit 5890bcdf41931fcdad81b678248d7d10fda89a50
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.ui: Use a GtkWindow
+
+M	data/alacarte.ui
+
+commit ed1998449ff1e4810d5e7e78aec0aa60db5dcaa5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    MainWindow: Construct MenuEditor separately
+
+    We might need to switch menus at runtime, meaning we need a way
+    to unload the current menu and add the new one.
+
+M	Alacarte/MainWindow.py
+M	alacarte.in
+
+commit 55dfaed09df5dbdadf0ee3545a730777e8a7d1df
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    Clean up builder files
+
+M	data/alacarte.ui
+
+commit e65fd3456817e9f7735a52941c5d6b787a1d030d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    Allow specifying a menu basename other than applications.menu
+
+    Users may want to edit menus other than 'applications.menu'. Allow
+    them to pass an argument on the command line that specifies the menu
+    basename.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	alacarte.in
+
+commit 075b8f0b3e824c36ea9073ea084f9699b927f6b2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2013-01-10
+
+    alacarte.in: Fix indentation
+
+M	alacarte.in
+
+commit d3e706db87769a2495ecac981773e6c03ef5b847
+Author: Yaron Shahrabani <sh.yaron@gmail.com>
+Date:	2012-12-28
+
+    Updated Hebrew translation.
+
+M	po/he.po
+
+commit 2fb666797cfe81dc1eb57a42050fef0ccfc0373e
+Author: Balázs Úr <urbalazs@src.gnome.org>
+Date:	2012-12-26
+
+    Updated Hungarian translation
+
+M	po/hu.po
+
+commit 147fbe4934ed58b35c51e56fa74bf2240150ba94
+Author: Rafael Ferreira <rafael.f.f1@gmail.com>
+Date:	2012-12-22
+
+    Updated Brazilian Portuguese translation
+
+M	po/pt_BR.po
+
+commit eed3d62305f5326f9485c04346592662f20acce8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-11-20
+
+    Post-release version bump
+
+M	configure.ac
+
+commit eaedd3bbae16059a3bba6ae4304bf799eac23bf8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-11-20
+
+    Release 3.7.2
+
+M	NEWS
+
+commit a9207340f22b2eaff4a55cacc8d5a61a22a6934e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-11-20
+
+    Pre-release version bump
+
+M	configure.ac
+
+commit 10f611c074ae7b2ab0ec48ff3b8946c5f8e19970
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-11-16
+
+    Use with statements for management
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit f7835d7dcd37b10f25e208581ec52919cf68e732
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-11-16
+
+    Fix crashes when writing out files
+
+    XML files as well as key files should always be in UTF-8 encodings.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit d006c5533287ea34cfefc4b42367ea2aa213d0cf
+Author: Mattias Põldaru <mahfiaz@gmail.com>
+Date:	2012-10-30
+
+    [l10n] Updated Estonian translation
+
+M	po/et.po
+
+commit fe7211f2eb4c8bcf7cbddca75bf4e28ee7b98659
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-10-22
+
+    MenuEditor: deal with the case of having no $XDG_MENU_PREFIX
+
+M	Alacarte/MenuEditor.py
+
+commit 7d62fd2158193f6a624b39b89b4a109eea2d841c
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-10-17
+
+    Release 3.6.1
+
+M	NEWS
+M	configure.ac
+
+commit 1a15b19474d43f7d0f298a067bc9c158e4161789
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-10-17
+
+    Release as xz
+
+M	configure.ac
+
+commit a4db6799f41947b5cd08231e77d41c561d94170a
+Author: Dominique Leuenberger <dimstar@opensuse.org>
+Date:	2012-09-06
+
+    Respect $XDG_MENU_PREFIX when constructing the path to
+    applications.menu
+
+    Fixes bug 683535.
+
+M	Alacarte/MenuEditor.py
+
+commit 2db5ad5c7fa91cbb89ff3ada409bbd94125dc039
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:	2012-10-13
+
+    Updated Latvian translation
+
+M	po/lv.po
+
+commit c227d3840f09152566fce7ed8f76a5c160a536d0
+Author: Yuri Myasoedov <omerta13@yandex.ru>
+Date:	2012-09-29
+
+    Updated Russian translation
+
+M	po/ru.po
+
+commit 79ef85a33c2788e741ab6d2f6fee803c7ecdd9e4
+Author: Chris Leonard <cjl@laptop.org>
+Date:	2012-09-23
+
+    Updated British English translation
+
+M	po/en_GB.po
+
+commit ffe6fec858345486fbdc3727835660a2318b3e60
+Author: Ville-Pekka Vainio <vpvainio@iki.fi>
+Date:	2012-09-12
+
+    Finnish translation update by Jiri Grönroos
+
+M	po/fi.po
+
+commit bb76b0a256e4ba8085782a2bc1785952573bbffd
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2012-09-01
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 9e7e490db7274334d272964b5f58a19da51fc724
+Author: Marek Černocký <marek@manet.cz>
+Date:	2012-09-01
+
+    Updated Czech translation
+
+M	po/cs.po
+
+commit f6eb2de5b22bf7f53c193a3a00818d43452fed45
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2012-08-23
+
+    Updated Norwegian bokmål translation
+
+M	po/nb.po
+
+commit 53f55c5f75a81e7e0a5a92e210a733fc4ffacb05
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2012-08-19
+
+    Updated Galician translations
+
+M	po/gl.po
+
+commit afb208bca883832668ab46f980f8b771d0203357
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2012-08-07
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit d3caf3115268660e737c1f484fa82be2fbda8e0b
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:	2012-08-07
+
+    Updated Serbian translation
+
+M	po/sr.po
+M	po/sr@latin.po
+
+commit ef08eabdf362bb5ff9eebe331b3a946c2d062323
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-08-06
+
+    Post-release version bump
+
+M	configure.ac
+
+commit 8d5cb9771a8cf876507e07eb33396d1d02820714
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-08-06
+
+    Release 3.5.5
+
+M	NEWS
+
+commit 324f3830ba71e09bb2f9812a47a0cc0714995092
+Author: Aurimas Černius <aurisc4@gmail.com>
+Date:	2012-08-05
+
+    Updated Lithuanian translation
+
+M	po/lt.po
+
+commit de1870459f35d1ee8053bc6abe29d17c7632ab2c
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2012-07-27
+
+    Updated Galician translations
+
+M	po/gl.po
+
+commit 36a6f9c661d16e8e84aaa7795b56c2fbfd6cb246
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2012-07-27
+
+    Updated Galician translations
+
+M	po/gl.po
+
+commit 9f18c3938e7a9fe1c300c982762d1e25319ddab0
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2012-07-21
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 8e7ff032e895a31b3e1bdff0e881d185c5190c9e
+Author: Chao-Hsiung Liao <j_h_liau@yahoo.com.tw>
+Date:	2012-07-18
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+M	po/zh_HK.po
+M	po/zh_TW.po
+
+commit 92f3ab9c428f5addf56958bef458b537c6c2b241
+Author: Andika Triwidada <andika@gmail.com>
+Date:	2012-07-18
+
+    Updated Indonesian translation
+
+M	po/id.po
+
+commit 87c756e4fce7f5b52495c5c85efee3dfeb231394
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-17
+
+    MainWindow: Remove the code that triggers the revert dialog
+
+    Missed this, whoops.
+
+M	Alacarte/MainWindow.py
+
+commit a8263705a4d4a2f82bd15116cd041114217fc90a
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:	2012-07-17
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit c66e14b998c46aa5bedd3930757d3b38fa95d525
+Author: Sasi Bhushan Boddepalli <sasi@swecha.net>
+Date:	2012-07-17
+
+    Updated Telugu Translation
+
+M	po/te.po
+
+commit 09312a6a7fc6282d96cf87d49db1815a464a0feb
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-16
+
+    Post-release version bump
+
+M	configure.ac
+
+commit a5c826253a7993e6a0d3fd14c4fbf0ce2bb0c29e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-16
+
+    Release 3.5.4
+
+M	NEWS
+
+commit 6517d363de24299b5472ba43d0af7396fcb9e086
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-15
+
+    Rename the "Revert" button
+
+    "Revert" is not an appropriate name for this button, as it deletes
+    all custom additions and modifications to the menu system. "Restore
+    System Configuration" is a better name.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	data/alacarte.ui
+
+commit 81ec64be35c11b4c29b5ae472c7d91816a53b164
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-15
+
+    MainWindow: Remove "Restore" menu item from Edit
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit 01e81f17dc432c7ec6a8a325a43017f559773017
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-15
+
+    ui: Remove the restore dialog
+
+    Dead UI
+
+M	data/alacarte.ui
+
+commit 64ffa5aed472e895883e7ec5ba181c60d2a2a3b1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-07-15
+
+    MenuEditor: Remove unused argument from loadItems
+
+M	Alacarte/MainWindow.py
+
+commit 70ad086067815756a5a76f9159e4622f9cf877b0
+Author: Andika Triwidada <andika@gmail.com>
+Date:	2012-07-15
+
+    Updated Indonesian translation
+
+M	po/id.po
+
+commit ac1eda4b39ba9fd1fd28551ed39390058727448f
+Author: Djavan Fagundes <djavanf@gnome.org>
+Date:	2012-07-10
+
+    Updated Brazilian Portuguese translation
+
+M	po/pt_BR.po
+
+commit 1abe5e2d93d127ab3c4ea6cf262241c165c00ed6
+Author: Tom Tryfonidis <tomtryf@gmail.com>
+Date:	2012-06-29
+
+    Updated Greek translation
+
+M	po/el.po
+
+commit 8749c44bf2e18ee20bbc44a09a0d323ab4a3b89d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-26
+
+    configure: We require gnome-menus 3.5.3
+
+M	configure.ac
+
+commit 514e4bdfad74b1783a8eed110b04c49cbaf174dd
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-24
+
+    Post-release bump
+
+M	configure.ac
+
+commit 5cd25420718f62edb4dff2ac69e69b7e7f8e4186
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-24
+
+    Release 3.5.3
+
+M	NEWS
+M	configure.ac
+
+commit 35d83001c9eec60b0938e36d4935a49aba4fed8e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    Add myself to AUTHORS
+
+M	AUTHORS
+
+commit a8b35f0f0c8aa75a6e40dc4c05bd5652af135485
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    MenuEditor: Clean up more code
+
+M	Alacarte/MenuEditor.py
+
+commit 2d50f3c3b55e96b23a30f93b7920ea413b1becc2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    MenuEditor: Support separators
+
+M	Alacarte/MenuEditor.py
+
+commit 7d1a28d059e60791f9084bf2b13c991b43d4aad3
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    MenuEditor: Remove unused code of moving menus/things between menus
+
+    We can always revive it if it gets used again.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 37cc73d654f8774b1b23596874960a7a607425ea
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    MenuEditor: Remove silly Layout class stuff
+
+M	Alacarte/MenuEditor.py
+
+commit ec72a8f54fd0ddcf302687a527e6cfd749f597a3
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-20
+
+    MainWindow: Remove ugly hack
+
+M	Alacarte/MainWindow.py
+
+commit 4df8c61d26d9ea49c05a037d0cb0a06e1c64d4a4
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    MainWindow: Remove on_style_set handler
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit 2d476bd597e1521318a9e0b719423d18a9adf8b3
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    alacarte.ui: Remove silly last_modification_time attributes
+
+M	data/alacarte.ui
+
+commit 6fc3486388515cffd5c3ca7666bff04ac0105980
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    alacarte.ui: Remove silly insignificant labels
+
+M	data/alacarte.ui
+
+commit 45083e538491363db9c972a43240c453965f7274
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    util: Don't fail when loading non-existant icon paths
+
+M	Alacarte/util.py
+
+commit 6c6494d7af2fa92fd01afbff13a87f7228bcb7f2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    MenuEditor: Remove Menu object split
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 68c1527952d99394fba0bd6523ad9d4286fe2691
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-19
+
+    MenuEditor: Remove visible_tree mess
+
+M	Alacarte/MenuEditor.py
+
+commit b2d5b8bbd8273e51cb0744ff069fb98d871b3864
+Author: Sasi Bhushan <sasi@swecha.net>
+Date:	2012-06-19
+
+    Updated Telugu Translation
+
+M	po/te.po
+
+commit f3a41e14b3d7e30c1b3776f7b03a234ca6ebf4d8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-11
+
+    MainWindow: Fix typos related to separators
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=677343
+
+M	Alacarte/MainWindow.py
+
+commit f441b3165f8cf6321aebbf098cee10eb0f2436dd
+Author: Aleksey Kabanov <ak099@mail.ru>
+Date:	2012-06-06
+
+    Updated Russian translation
+
+M	po/ru.po
+
+commit eeb19696e948c61f11405564fa9d2d91a1fe31cf
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-05
+
+    MenuEditor: Put back the top-level "Applications" menu
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=677420
+
+M	Alacarte/MenuEditor.py
+
+commit e3cff4f862687f027da20f42467c3f90d5d7f816
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-05
+
+    MainWindow: Clean up imports
+
+M	Alacarte/MainWindow.py
+
+commit 807e60c1f9e847f4d332d15b24562c781594f7fb
+Author: Rūdolfs Mazurs <rudolfsm@src.gnome.org>
+Date:	2012-06-05
+
+    Updated Latvian translation
+
+M	po/lv.po
+
+commit 2aa9b4f49e4a73117815877cf9950d6363291351
+Author: Gil Forcada <gforcada@gnome.org>
+Date:	2012-06-03
+
+    [l10n] Removed old translations
+
+M	po/ca@valencia.po
+
+commit c2fda12ce88626b41715a3178dea31eea3b8700a
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:	2012-06-03
+
+    [l10n]Updated Catalan (Valencian) translation
+
+M	po/ca@valencia.po
+
+commit 57e1542cd3909cd08bc2b5352f69c6b959fc63cd
+Author: Gil Forcada <gforcada@gnome.org>
+Date:	2012-06-03
+
+    [l10n] Updated Catalan translation
+
+M	po/ca.po
+
+commit 722aa11b37895c0934a63dd51116d4e9a25a6b21
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2012-06-03
+
+    Updated Galician translations
+
+M	po/gl.po
+
+commit b5b27e93f35f7dd63a65e8daecfbd3412abcb7a8
+Author: Bruno Brouard <annoa.b@gmail.com>
+Date:	2012-06-02
+
+    Updated French translation
+
+M	po/fr.po
+
+commit 5df6c615f4c063b2bd48c44350a29e96e022f170
+Author: Christian Kirbach <Christian.Kirbach@googlemail.com>
+Date:	2012-06-02
+
+    Updated German translation
+
+M	po/de.po
+
+commit 8d0270fc1f3c21d3f0d02c23fd41a90aafd0f717
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2012-06-01
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit 9c22f362a6b78d1f89d3f86952357f927e2c1210
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:	2012-06-01
+
+    Updated Bulgarian translation
+
+M	po/bg.po
+
+commit 1161c25d52a640542686ba2ded3028e0e71b25d4
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:	2012-06-01
+
+    Updated Serbian translation
+
+M	po/sr@latin.po
+
+commit 1fdc5299b980df70331766cdc3f81d4ad4bf6f73
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:	2012-06-01
+
+    Updated Serbian translation
+
+M	po/sr.po
+
+commit 4b81ce1be4215c29c89bddc93d1aee0c8d074ef5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove old .cvsignore
+
+D	Alacarte/.cvsignore
+
+commit 93e39e71d8bfa03544464c5eae3e94b37e122aea
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Release 0.13.4
+
+M	NEWS
+
+commit d9d0312a0f38bec6551d0d79d917eac389f0730b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MainWindow: Remove DND
+
+    We'll need to fix this up big time for GTK+ 3. Just drop it on
+    the floor for now.
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit c48e0f34c7b52d88ede1fdd6978c7ef70b5b4aa6
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MainWindow: Refactor button sensitivity code a bit
+
+M	Alacarte/MainWindow.py
+
+commit a6c9ec49b421cb1d872192e11146e0b1c57a392c
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2012-06-01
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 9e70cb265982d3bae453c4fe4c87a7c514ed9a6a
+Author: Daniel Mustieles <daniel.mustieles@gmail.com>
+Date:	2012-06-01
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit bcabaee66439b4f7c7f0b44443f5d50d5b646218
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MenuEditor: Fix creating submenus
+
+M	Alacarte/MenuEditor.py
+
+commit ec28d8678ac091a6099ef94f6d8382f273bee9a0
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MainWindow: Refactor loadMenu
+
+    This is a lot cleaner than the hardcoded depth mess we had before
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 29dd205db0dcc26a257902b02834f1f606439cc2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MenuEditor: Remove some fancy usercustom thing
+
+    Goodbye.
+
+M	Alacarte/MenuEditor.py
+
+commit 311270a639b7ed7c48d04f8bfc77bf5461e6f22d
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MenuEditor: Remove getMenu
+
+M	Alacarte/MenuEditor.py
+
+commit a825a8da823e99167158b08c1140d553aaa23c90
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove dumb explicit checks
+
+    Replace "== None" with "is None"
+    Replace "!= None" with "is not None"
+    Replace "== False" with "not"
+    Replace "!= False" with ""
+
+    If I see "== True" I'm going to shoot myself.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 91c7dc8889f60e5d3b21f3aaff23290061443d61
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    NainWindow: Refactor loadItems/loadMenu
+
+    Make these methods more competent and less messy
+
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+
+commit d342bb73bc050a9e7d75c1b34502b49c4cd08ad8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MenuEditor: Be resilient to bad XML
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=654167
+
+M	Alacarte/MenuEditor.py
+
+commit 94ef954db2c738cf84f322297cc3357103b90d42
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    desktop: Change description of alacarte
+
+    New wording suggested by Cosimo Cecchi <cosimoc@gnome.org>
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=542331
+
+M	data/alacarte.desktop.in.in
+
+commit 9fcdd5efd398aa555a890280d99fa4a114c25f2c
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MainWindow: Don't select the destination folder after a drop
+
+    Based on a patch by Antti Kaihola <akaihol+gnome@ambitone.com>
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=551390
+
+M	Alacarte/MainWindow.py
+
+commit 29640389b3131822493371678f54b99e72f090ac
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Move revert item code close together
+
+    Quick organizational commit
+
+M	Alacarte/MenuEditor.py
+
+commit 39f2196e1a63f16241d3fc5f3233c262ccb6107c
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove Undo framework
+
+    It was poorly implemented, and broken. I doubt anybody ever used
+    it, as
+    its only exposure on the UI was two keyboard buttons: Ctrl+Z and
+    Ctrl+Shift+Z.
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 76e90d529de86d7fbcfe3f598352a779a8c67aa5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove outdated icon files
+
+    You can find better renders and copies in the data/ dir.
+
+D	alacarte.png
+D	alacarte.svg
+
+commit ec7f1f638c264e7486a9aaadc57cf903f16871a2
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    .gitignore: Update
+
+M	.gitignore
+
+commit 12da3ccfa4baada0ec463f1a60df7037c58db7b3
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove XML DOM duplicated code loading
+
+M	Alacarte/MenuEditor.py
+
+commit 7dc27f3109450cf6d8e49c0a386cd5ad6ab293b6
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove semicolon
+
+M	Alacarte/MenuEditor.py
+
+commit 4f2698e827102e09c6039046e76522c251aa81ce
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Remove Python name mangling
+
+    Disgusting
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit a03feb7f667dbcb2c985845807628657c4910ab5
+Author: Antoine Jacoutot <ajacoutot@openbsd.org>
+Date:	2011-09-13
+
+    Add "Utility" to Categories so that alacarte appears in the
+    "Accessories" menu in fallback mode, instead of "Others".
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=658880
+
+M	data/alacarte.desktop.in.in
+
+commit 10a804414444ce0ab78c9d131c9945e18f559547
+Author: Alexandre Rostovtsev <tetromino@gentoo.org>
+Date:	2012-05-24
+
+    util: avoid crashing if a .desktop file has no icon defined
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=676700
+
+M	Alacarte/util.py
+
+commit b299638ee9347084f161732f7a0205fdbd51b327
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    MenuEditor: Fix silly typo
+
+    The API is get_app_info() not get_info()
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=676987
+
+M	Alacarte/MenuEditor.py
+
+commit a26cf48cba34be44855aefd9f14b79a4925c1f93
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-06-01
+
+    Update .gitignore
+
+M	.gitignore
+
+commit 244c6d0257114cdcb7349d52127c6ff2f0e4f2bc
+Author: Alexandre Rostovtsev <tetromino@gentoo.org>
+Date:	2012-05-24
+
+    MainWindow: treeview.get_selection() in cursor-changed callbacks
+    can return None
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=676702
+
+M	Alacarte/MainWindow.py
+
+commit b97f210d8c14c9c013a30ff8f7af240acbf30a67
+Author: Alexandre Rostovtsev <tetromino@gentoo.org>
+Date:	2012-05-23
+
+    configure: Remove old pygtk/pygobject-2 checks
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=676699
+
+M	configure.ac
+
+commit a56611b113d0d19fe56139a5b8a093e2b7878961
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-23
+
+    Post-release version bump
+
+M	configure.ac
+
+commit 072620af010c65c99a82e76f2a676713b7fab962
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-23
+
+    Release 0.13.3
+
+M	NEWS
+M	README
+
+commit b345e7e8e83891c9388e46592097695fa887b841
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-23
+
+    Add a .gitignore
+
+D	.cvsignore
+A	.gitignore
+
+commit c8f47cadaf2b0a629521da880f5713f5d84293dc
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-23
+
+    Replace Travis with myself as a maintainer
+
+    He didn't respond in two weeks to my email about taking over
+    maintainership,
+    so I'm forcing it. Travis, if you're reading this, you can have it
+    back if
+    you really want.
+
+M	MAINTAINERS
+M	alacarte.doap
+
+commit 210669f642ea8f454f6ffc7a02ec179c7eeb5eac
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: Fix directory entry visibility
+
+M	Alacarte/MenuEditor.py
+
+commit d9955c993fc1e12aa973c1bf5622f97f179865b5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: Refactor out Menu into its own class
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 75522c95a9955f0185f70bd35e8278905a8c6195
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: undo and redo lists should not be global
+
+M	Alacarte/MenuEditor.py
+
+commit f20a288f39dfc040af324335cebba80a3d376ba1
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: don't save on load
+
+M	Alacarte/MenuEditor.py
+
+commit 3ac227258d30abbcfd57bb7e451ddbd97c35affc
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: Punt removeWhitespaceNodes somewhere else
+
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+
+commit 4a8a14fe01da898d66e32e5dd3be769a8ca87553
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: Fix up XML writing
+
+M	Alacarte/MenuEditor.py
+
+commit 08d0134db621af24dc786f7daa3877ed724b3dc3
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MenuEditor: Remove some old debugging stuff
+
+M	Alacarte/MenuEditor.py
+
+commit eb3ce9abc34cc168d5da6532009726dbf2eeb777
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-09
+
+    MainWindow: Remove old hack for a broken gnome-panel binary
+
+    It's long been fixed.
+
+M	Alacarte/MainWindow.py
+
+commit 3fd341746ec40c73bf9c74c7f7e51d0e91092f48
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-02
+
+    alacarte.in: Remove another bare except
+
+M	alacarte.in
+
+commit 4218b990084ae9c739c4516415ceacc8be918c2b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-02
+
+    MenuEditor: Fix visibility toggle switch
+
+M	Alacarte/MenuEditor.py
+
+commit cf0e9ba1b72bae93eb70292c5df3e12fbe4f8889
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MenuEditor: Remove unused imports
+
+M	Alacarte/MenuEditor.py
+
+commit cb4f03b58c181f72aa539cc5786b808c6cacc8f8
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MenuEditor: Fix indentation, remove more print statements
+
+M	Alacarte/MenuEditor.py
+
+commit 8dfed6e06106a5e3ce5bffb06ded1cb1aee8cee5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MenuEditor: Remove regex and dynamic property madness
+
+    Don't even.
+
+M	Alacarte/MenuEditor.py
+
+commit c6ccf40aa8d8210a46171e82b1611956c93508cf
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: work when deselecting things
+
+M	Alacarte/MainWindow.py
+
+commit 1abad9caa4f50321cdb499e71e2b1e34e7c33e8e
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    util: Use GLib for xdg basedir spec stuff
+
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+
+commit 39add39429370daa63971bb1805298a496497124
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    Use new-style classes, clean up
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	alacarte.in
+
+commit 31aa00bac42edb076bf30a9d4e7ed01c0be6dfdf
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MenuEditor: Scrap unused __deleteItem
+
+M	Alacarte/MenuEditor.py
+
+commit 6dc0fa695cbf16bc6d4f7daadec4b2f1c4f7c66b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Fix drag/drop handlers
+
+M	Alacarte/MainWindow.py
+
+commit 7e5915df09fa38e2b702a351b2291f72a7549167
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    util: Fix get_icon
+
+M	Alacarte/util.py
+
+commit 704fe9afba158b1959322a50c0d90292511350ec
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    Remove print statements
+
+M	Alacarte/MainWindow.py
+
+commit 59b2bf51bb351476318c8fa95d10426b790ee4a6
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Fix popup
+
+M	Alacarte/MainWindow.py
+
+commit df217421c15adedb9a9404c811af0cafca9d3ed5
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    util: Replace our own DesktopParser with GKeyFile
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+
+commit 9e760a49ddd9bacdc6d0f719c45206acd73d519b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Remove more bare excepts
+
+    And remove more timeout shenanigans
+
+M	Alacarte/MainWindow.py
+
+commit 2bd7e36abea999605ee8736ccfe6bdad9a50368b
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    alacarte.ui: Remove GTK+2 things
+
+M	data/alacarte.ui
+
+commit bd188fd969c74009504423bc0aeb45d8320eff60
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Remove timer shenanigans
+
+M	Alacarte/MainWindow.py
+
+commit 90e605c5b1c13754ada7483a21d8316b78585e24
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Remove an unused variable
+
+M	Alacarte/MainWindow.py
+
+commit 0edd578f0d794626216d8edb11fd30d03ca4b05a
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Require a config
+
+    It's not that hard, jeez.
+
+M	Alacarte/MainWindow.py
+
+commit c62824c994d31f0efcd12eede335f6d0267865c7
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    MainWindow: Fix imports
+
+    We need tempfile, and lose print_stack
+
+M	Alacarte/MainWindow.py
+
+commit 99f933806ca171fe2e1efee27afb2640fd090e07
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    Use spaces for indents
+
+    PEP8 compliance
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+
+commit 9c73115fbb5cc38cf44d35741e4a2f7aa3046bf9
+Author: Jasper St. Pierre <jstpierre@mecheye.net>
+Date:	2012-05-01
+
+    util: Remove unused for_properties
+
+M	Alacarte/util.py
+
+commit ce1ee2b350189692a7a89a52d8b76047d5ae7df8
+Author: Ray Strode <rstrode@redhat.com>
+Date:	2011-11-29
+
+    port to latest gmenu / introspection
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=626220
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	Alacarte/util.py
+M	configure.ac
+
+commit 425a3b4fde6756bae8d795eca6de3be79883368c
+Author: Sanjib Narzary <alayaran@gmail.com>
+Date:	2012-04-30
+
+    Added Bodo translation
+
+M	po/LINGUAS
+A	po/brx.po
+
+commit 19a24557083ef69f6542089a174b6c7b026eb091
+Author: Alexander Shopov <ash@kambanaria.org>
+Date:	2012-04-01
+
+    Updated Bulgarian translation
+
+M	po/bg.po
+
+commit e31d30ce11fb44cc65870a4e96c3f7b24e2f8e29
+Author: Timo Jyrinki <timo@debian.org>
+Date:	2012-03-12
+
+    Finnish translation update from
+    http://l10n.laxstrom.name/wiki/Gnome_3.4 translation sprint
+
+M	po/fi.po
+
+commit b10d4e4b0b209ae812571fe34a5293bed08f2602
+Author: Arthur Buliva <arthur@kamusi.org>
+Date:	2012-02-15
+
+    Added Swahili translation
+
+M	po/LINGUAS
+A	po/sw.po
+
+commit 612ae567463f319275d259bd273146b315cdc1ae
+Author: Khoem Sokhem <khoemsokhem@khmeros.info>
+Date:	2012-02-13
+
+    [l10n] Updated Khmer translation
+
+M	po/km.po
+
+commit f3d68b228f0358f8eed848840ffd7727d95f3e7d
+Author: Khoem Sokhem <khoemsokhem@khmeros.info>
+Date:	2012-02-13
+
+    Khmer translation added
+
+M	po/LINGUAS
+A	po/km.po
+
+commit 157d06ef7b24b06a3f96d4e055be4ab4ed6a70a9
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2012-01-25
+
+    Updated Norwegian bokmål translation
+
+M	po/nb.po
+
+commit bdc865194566055589ab67e8f658f91adfc8a893
+Author: Nilamdyuti Goswami <ngoswami@redhat.com>
+Date:	2011-09-22
+
+    Update Assamese translation
+
+M	po/as.po
+
+commit 515813f16b6fd8c0e3251352d385c75e6928f78b
+Author: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>
+Date:	2011-09-17
+
+    Updated Japanese translation
+
+M	po/ja.po
+
+commit 1cd4cb4d0123da14cfe9a853f7a4bc291f831632
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-25
+
+    Don't need to column.clear_attributes if column was just constructed
+
+M	Alacarte/MainWindow.py
+
+commit 1629b3bdab555d3c71cf716536171de2c7e2e1c8
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-24
+
+    Fix crash TypeError: Expected Gtk.TreePath, but got StructMeta
+
+    Gobject introspection doesn't allow comparison between a treepath
+    and a
+    string. So avoid doing that.
+
+M	Alacarte/MainWindow.py
+
+commit a892965b67d0f3be6a8c1b3a0a2944bf7653a65c
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-23
+
+    Don't use fixed height mode
+
+    Causes problems when font size is increased (accessibility problem)
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=589385
+
+M	Alacarte/MainWindow.py
+
+commit 2d291f4339956d29f87aaaab7b808a49d82e65af
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-23
+
+    make moving items up/down work again
+
+M	Alacarte/MainWindow.py
+
+commit 2bf8ed02d9cd905b55cef3a198f2df3605f63922
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-23
+
+    Partially fix drag-and-drop
+
+M	Alacarte/MainWindow.py
+
+commit 1646c1919499c4cbc4b823fdfa05659e8af3455d
+Author: Alexandre Rostovtsev <tetromino@gmail.com>
+Date:	2011-08-23
+
+    Fix crash in on_menu_tree_cursor_changed()
+
+    This bug is caused by the fact that
+    treeview.get_selection().get_selected() can return a None iter
+    when the
+    selection has no rows (e.g. if the user has deselected a row by
+    Ctrl-clicking on it).
+
+    The solution is to use gtk.SELECTION_BROWSE selection mode; it will
+    ensure that one row is always selected and valid iters are returned
+    from
+    the selection's get_selected().
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=652454
+
+M	Alacarte/MainWindow.py
+
+commit 2c45f58234c0ab702518a434e10f8d4c8116831d
+Author: Matt Jorde <majorde@gmail.com>
+Date:	2011-08-23
+
+    Add properties and a delete button
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=518251
+
+M	Alacarte/MainWindow.py
+M	data/alacarte.ui
+
+commit 235f8963642e4fbfb5e5bad83c3679282829d8d6
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-23
+
+    Don't enforce a minimum size of the main window
+
+    Only suggest a default size so the window can be made smaller.
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=621992
+
+M	data/alacarte.ui
+
+commit 0f6a88025f13e02433f004bb88c1daefb6f18eb1
+Author: Lars Kruse <devel@sumpfralle.de>
+Date:	2011-08-22
+
+    Fix several drag-and-drop usability issues
+
+    1) drag and drop of an item from the item pane "into" a menu item
+    of the
+    item pane
+
+    2) moving a separator item from the item pane "into" a menu item
+    of the
+    "menu pane"
+
+    3) dragging an item from the item pane to another position in the item
+    pane (between two other items)
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=611278
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 7c6a18c8a5170c5abc77f8bace1313578fec0d48
+Author: Lars Kruse <devel@sumpfralle.de>
+Date:	2011-08-22
+
+    Fix erroneous selection handling below separator items
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=611280
+
+M	Alacarte/MainWindow.py
+
+commit 49cf1a25227018de4878eee5ca4440c1cc0a3fac
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-22
+
+    Don't crash when a desktop has a / in the name
+
+    Reported by Andreas Moog
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=576531
+
+M	Alacarte/MenuEditor.py
+
+commit 8c33986006604f4fa308c439466f7de9b5c9227a
+Author: Josselin Mouette <joss@debian.org>
+Date:	2011-08-22
+
+    Fix Python error on startup with gnome-menus 2.91.6+
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+
+commit 3d4bbfd0d7c996030a9ee7028389634dcd7310a9
+Author: Andrew <rugby471@gmail.com>
+Date:	2011-08-22
+
+    Avoid icons in buttons
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=632227
+
+M	data/alacarte.ui
+
+commit 4744a4edf4770791ab5be643a515df15ef12074b
+Author: Travis Watkins <amaranth@ubuntu.com>
+Date:	2011-08-22
+
+    make undo work when deleting files
+
+    https://bugzilla.gnome.org/show_bug.cgi?id=573680
+
+M	Alacarte/MenuEditor.py
+
+commit b227c32ba5fe7f15884c26efd47d10950d16720c
+Author: Matthias Clasen <mclasen@redhat.com>
+Date:	2011-08-22
+
+    use startup notification
+
+M	data/alacarte.desktop.in.in
+
+commit eb48ea67241f7a4c27170057afd13616efcaaa6a
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2011-08-21
+
+    make drag-and-drop work again
+
+M	Alacarte/MainWindow.py
+
+commit 248c91d6f752612c22f8e91108f9af78e3ec5aa1
+Author: Alex Anthony <alex.anthony28991@gmail.com>
+Date:	2011-07-24
+
+    Port to GTK3/pygi
+
+    Still needs a load of changes to configure properly
+    Also, drag and drop isn't working - see note at top of MainWindow
+
+M	Alacarte/MainWindow.py
+M	Alacarte/util.py
+
+commit 69cad9c1c53f23d85f538e9d849870fc935c76b2
+Author: Priscilla Mahlangu <priny@translate.org.za>
+Date:	2011-07-29
+
+    New translation for Zulu (zu)
+
+M	po/LINGUAS
+A	po/zu.po
+
+commit 7bcac66839a9e22e6144fab5aec5033c8fc9a44f
+Author: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>
+Date:	2011-07-24
+
+    Updated Belarusian translation.
+
+M	po/be.po
+
+commit 3cd92cab64d2dcc3756d7566822ed0bc5c8722ef
+Author: Thomas Hindoe Paaboel Andersen <phomes@gmail.com>
+Date:	2010-01-16
+
+    Use AM_SILENT_RULES
+
+M	Alacarte/Makefile.am
+M	Makefile.am
+M	configure.ac
+
+commit 8cffcacf24ee96689c60042e48ef919c7575549c
+Author: Colin Walters <walters@verbum.org>
+Date:	2011-05-04
+
+    Don't use a hardcoded path in /tmp
+
+M	Alacarte/MainWindow.py
+
+commit 14ac6114f673fb2c2a81831b570265ece2e160a8
+Author: Arash Mousavi <amousavi@src.gnome.org>
+Date:	2011-04-22
+
+    Updated Persian translation
+
+M	po/fa.po
+
+commit 36d7060307a7556eaab09cc76003f4eb0e28ada9
+Author: Kristjan SCHMIDT <kristjan.schmidt@googlemail.com>
+Date:	2011-04-03
+
+    Updated Esperanto translation
+
+M	po/eo.po
+
+commit 5e2119af23d52b676f91d656c735116a933d7156
+Author: Abduxukur Abdurixit <abdurixit@gmail.com>
+Date:	2011-03-27
+
+    Added UG translation
+
+M	po/ug.po
+
+commit 7e91f8352fbe7e207c8f134e4a5c216c3fa16206
+Author: Мирослав Николић <miroslavnikolic@rocketmail.com>
+Date:	2011-03-18
+
+    Reviewed Serbian Translation
+
+M	po/sr.po
+M	po/sr@latin.po
+
+commit 16d3a21da936eaa0f7ae04926c6d4d9f1f75d6df
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2011-02-11
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 703ffd21f894def0fc0dd714b4f242d7f07d09b4
+Author: Friedel Wolff <friedel@translate.org.za>
+Date:	2011-01-30
+
+    Add 'af' translation to LINGUAS
+
+M	po/LINGUAS
+
+commit 3f8c546d9c43687e1e0b9854f424a3f4de1ecbd5
+Author: Friedel Wolff <friedel@translate.org.za>
+Date:	2011-01-30
+
+    New Afrikaans (af) translation
+
+A	po/af.po
+
+commit 329513df938076928972731612b9a0b9e4c96640
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2011-01-26
+
+    QA of Galician translations
+
+M	po/gl.po
+
+commit fbef651de13acbd760e93324d3cbf38d8c99ce2d
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:	2010-12-23
+
+    Added UG translation
+
+M	po/ug.po
+
+commit 7edf173ff0b46c7f11efe74129ff4d1f180d1114
+Author: Wei-Lun Chao <chaoweilun@gmail.com>
+Date:	2010-12-09
+
+    Updated Traditional Chinese translation(Hong Kong and Taiwan)
+
+M	po/zh_HK.po
+M	po/zh_TW.po
+
+commit abdbfdc5e980e9ec6a865ec0de545158bec34ea7
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:	2010-11-20
+
+    Added UG translation
+
+M	po/ug.po
+
+commit 809ba83baf8a27769a7e651a91cc85af2a2f4c06
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:	2010-11-13
+
+    Added UG translation
+
+M	po/ug.po
+
+commit 41f66e2db4d2e2b1509e4572e60dd95c4e5484fd
+Author: Gheyret T.Kenji <gheyret@gmail.com>
+Date:	2010-10-23
+
+    Added UG translation
+
+M	po/ug.po
+
+commit 7f56a96be94b39feacb93e3fa9f16d0e97241052
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:	2010-10-23
+
+    Updated Catalan (Valencian) translation
+
+M	po/ca@valencia.po
+
+commit 84441ca5666cb01a1341a2a55aaaedfac1aa0a37
+Author: Kibavuidi Nsiangani <lundombe01@zaya-dio.com>
+Date:	2010-10-05
+
+    Added Kikongo translation
+
+M	po/LINGUAS
+A	po/kg.po
+
+commit 7537d28bb2bcabbf41fdcc1f226adc4ea1edad4c
+Author: Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>
+Date:	2010-09-20
+
+    Updated Japanese translation
+
+M	po/ja.po
+
+commit 3c309f81ec4e170f8d1ee69c6df43640edf13ea3
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2010-09-15
+
+    Post-release version bump
+
+M	configure.ac
+
+commit 33f01dc417c4c89981a131cb4c35d6e0246fccba
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2010-09-15
+
+    Release 0.13.2
+
+M	NEWS
+M	README
+
+commit 7e722ca932502c7cb383e4a14fb51ffbed2eb3fe
+Author: Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+Date:	2010-09-15
+
+    Updated Kazakh translation
+
+M	po/kk.po
+
+commit d462a2cfa6ae2813a9b7c14d14039903acf91ab4
+Author: Dirgita <dirgitadevina@yahoo.co.id>
+Date:	2010-08-31
+
+    Updated Indonesian translation
+
+M	po/id.po
+
+commit 75741abd538aaaf4c0a0973331ec90f28b2f3028
+Author: Kjartan Maraas <kmaraas@gnome.org>
+Date:	2010-08-20
+
+    Make this build against python 2.7 also
+
+M	configure.ac
+
+commit 80de86fe2069baecca444c30304b9b6fdda84074
+Author: Baris Cicek <baris@teamforce.name.tr>
+Date:	2010-08-15
+
+    Updated Turkish translation
+
+M	po/tr.po
+
+commit f85c54f95d841028a90c6c2f86b64cadb6c7dcdc
+Author: Fran Diéguez <fran.dieguez@mabishu.com>
+Date:	2010-07-18
+
+    Fixed headers in galician translation file
+
+M	po/gl.po
+
+commit 76a21cd02c7730c091b3c4a014b570163e7ad384
+Author: Sense Hofstede <qense@ubuntu.com>
+Date:	2010-07-18
+
+    Updated Frisian translation and added it to the LINGUAS file
+
+M	po/LINGUAS
+A	po/fy.po
+
+commit 45064dddccf6147d2003673917b97293fc60e6d0
+Author: Baurzhan Muftakhidinov <baurthefirst@gmail.com>
+Date:	2010-07-13
+
+    Updated Kazakh translation for alacarte
+
+M	po/kk.po
+
+commit 816a85929e884d537c917df35c38534ccb3c10cc
+Author: Kristjan Schmidt <kristjan.schmidt@googlemail.com>
+Date:	2010-06-05
+
+    Updated Esperanto translation
+
+M	po/eo.po
+
+commit 7825f7dde5ae2510e5021da6d44f41f3536c82ba
+Author: noch <norayr@arnet.am>
+Date:	2010-05-31
+
+    Added Armenian translation - po file. Modified LINGUAG.
+
+M	po/LINGUAS
+A	po/hy.po
+
+commit d614e226af45e52e54d7c5cdf3b1c6716a540140
+Author: Thomas Thurman <tthurman@gnome.org>
+Date:	2010-05-12
+
+    Updated Shavian transliteration
+
+M	po/en@shaw.po
+
+commit fd994924036a011d1ec59fcaccbfb6ee53e45008
+Author: Denis ARNAUD <denisarnuad@yahoo.fr>
+Date:	2010-05-11
+
+    updated breton translation
+
+M	po/br.po
+
+commit efa26e3e97c3c08de4e179664594aeface049b8c
+Author: Daniel Martinez Cucalon <entaltoaragon@gmail.com>
+Date:	2010-04-30
+
+    Added Aragonese translation
+
+M	po/LINGUAS
+A	po/an.po
+
+commit cdcfec0c596148e5aa6345b78ea90d1eb2752779
+Author: Gheyret Kenji <gheyret@hotmail.com>
+Date:	2010-04-24
+
+    Added UG translation
+
+M	po/ug.po
+
+commit d4dc3927e077edfa92cd7995f4201b483d6631af
+Author: Gheyret Kenji <gheyret@hotmail.com>
+Date:	2010-04-24
+
+    Added UG translation
+
+M	po/LINGUAS
+
+commit 3094dc906435d7c538a740c0f58cc03f1955ab91
+Author: Olav Vitters <olav@vitters.nl>
+Date:	2010-04-18
+
+    Fix doap file
+
+M	alacarte.doap
+
+commit 39172c2ea5f2c2463eff850e99b4de1f043fc987
+Author: Matej Urbančič <mateju@svn.gnome.org>
+Date:	2010-04-15
+
+    Updated Slovenian translation
+
+M	po/sl.po
+
+commit 0c8aa8a2fb3d39c7f48e406e8b14638099c09338
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2010-03-29
+
+    Post-release version bump.
+
+M	configure.ac
+
+commit bfa2e26c0bfedfc8896fc1e576dd197a9c7a8c55
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2010-03-29
+
+    Prepare for 0.13.1 release.
+
+M	NEWS
+M	README
+
+commit 12ce24381dc5eb89d50f4c71d4ca06cac51fec5e
+Author: Gheyret Kenji <gheyret@hotmail.com>
+Date:	2010-03-28
+
+    Added UG translation
+
+M	po/ug.po
+
+commit c4446c4419b994a5dce76b57f892ba671f7da735
+Author: Gheyret Kenji <gheyret@hotmail.com>
+Date:	2010-03-28
+
+    Added UG translation
+
+A	po/ug.po
+
+commit 924c7a3e6cf125bd5216c459e68e001189057ae6
+Author: Jamil Ahmed <itsjamil@gmail.com>
+Date:	2010-03-28
+
+    Updated Bengali translation
+
+M	po/bn.po
+
+commit 9cb947199a891262d4c09839b900c4c72108e5bc
+Author: Badral Sanligiin <badral@openmn.org>
+Date:	2010-03-22
+
+    Updated Mongolian translation
+
+M	po/mn.po
+
+commit c0d3425cba6b83dde669fc0e2b37e5aa2b2334d2
+Author: Changwoo Ryu <cwryu@debian.org>
+Date:	2010-03-07
+
+    Updated Korean translation
+
+M	po/ko.po
+
+commit 44e7b9fd70a32b3b7d4a4fea072c80756212a159
+Author: Umarzuki bin Mochlis Moktar <umarzuki@gmail.com>
+Date:	2010-03-03
+
+    Add Malaj translation. Fixes bug 610933.
+
+M	po/LINGUAS
+A	po/ms.po
+
+commit b6ae338520ee25374eb4fc08d37f5f26b6b14dfe
+Author: Piotr Drąg <piotrdrag@gmail.com>
+Date:	2010-02-24
+
+    Updated Polish translation
+
+M	po/pl.po
+
+commit 9f3a36def5a0659bb70616807fba21e7f3f79593
+Author: Fran Diéguez <frandieguez@ubuntu.com>
+Date:	2010-02-12
+
+    Updated Galician Translation
+
+M	po/gl.po
+
+commit ab358e71637a35bfd93d3726b83b151171554796
+Author: Adi Roiban <adi@roiban.ro>
+Date:	2009-11-28
+
+    Update Romanian translation
+
+M	po/ro.po
+
+commit 2e3f9d735638bcbb92e7fce5f4e338de142e64ae
+Author: Thomas Thurman <tthurman@gnome.org>
+Date:	2009-11-01
+
+    Shavian translation
+
+M	po/LINGUAS
+A	po/en@shaw.po
+
+commit b319a224cf5b9cd35f144736a703cd9240ef35a0
+Author: Gabor Kelemen <kelemeng@gnome.hu>
+Date:	2009-09-23
+
+    Fix initialization of i18n. Fixes bug #596098
+
+M	Alacarte/MainWindow.py
+
+commit 05dfdd943294868c5c4a067d170e1e6cd7652287
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-21
+
+    Start 0.13 development version.
+
+M	configure.ac
+
+commit 0daf1d6addb692dc43076077e35e6ca78484151c
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-21
+
+    Prepare for 0.12.4 release.
+
+M	NEWS
+
+commit 657ab0fd19e7f267a188e14fbe028176aaacce9b
+Author: Niels-Christoph Fiedler <linux@medienkompanie.de>
+Date:	2009-09-16
+
+    Updated German translation
+
+M	po/nds.po
+
+commit 34dfdca0b4fe129956355e8f775f406d62a42da4
+Author: Erdal Ronahi <erdal.ronahi@gmail.com>
+Date:	2009-09-15
+
+    Updated Kurdish translation
+
+M	po/ku.po
+
+commit e5c70d103f07be0bbc8f18b0c0ccb32fe1df334a
+Author: Rajesh Ranjan <rranjan@rranjan.csb>
+Date:	2009-09-11
+
+    maithili added
+
+M	po/LINGUAS
+A	po/mai.po
+
+commit 39ae6cb9a658f5965331668772a356323ad0016b
+Author: Rajesh Ranjan <rranjan@rranjan.csb>
+Date:	2009-09-11
+
+    hindi update by Rajesh Ranjan
+
+M	po/hi.po
+
+commit d76145d44847f0923ef1acd19b3a609f61f467f2
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Post release version bump
+
+M	README
+M	configure.ac
+
+commit 25e5ae1d7372383e63824b6d66ae3c8bd32430b8
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Update NEWS for 0.12.3
+
+M	NEWS
+
+commit 3554a17989e83873476c9941851c75de8c437195
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Set the translation domain to GtkBuilder
+
+M	Alacarte/MainWindow.py
+M	Alacarte/Makefile.am
+M	Alacarte/config.py.in
+
+commit 2cb45302494a7da05fb1f52a64e3e8723cfc561b
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Post release version bump
+
+M	README
+M	configure.ac
+
+commit e660ce7a0a07da2c783e403bca16d11807f89ee9
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Update NEWS and README for 0.12.2
+
+M	NEWS
+M	README
+
+commit 8f40679b2237b7f8a2d3aae36ccc832a502614eb
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-09-08
+
+    Generate config.h
+
+M	configure.ac
+
+commit 1a21a0a5b36b0402b284f364a5e759a3e01a4c76
+Author: Vincent Untz <vuntz@gnome.org>
+Date:	2009-09-08
+
+    Use display name instead of name for menu items
+
+    This enables us to display the X-GNOME-FullName key instead of
+    the Name
+    key when available.
+
+    This change requires gnome-menus 2.27.92.
+
+    http://bugzilla.gnome.org/show_bug.cgi?id=594443
+
+M	Alacarte/MainWindow.py
+M	Alacarte/MenuEditor.py
+M	configure.ac
+
+commit e8d0dadcf57a145a9673b0bde7e9ff1062b90886
+Author: Rodrigo L. M. Flores <rlmflores@src.gnome.org>
+Date:	2009-08-30
+
+    Updated Brazilian Portuguese mailing list address.
+
+M	po/pt_BR.po
+
+commit dff9e797bcb4ffbf4f27b6b867b636db226b30d9
+Author: Andre Klapper <a9016009@gmx.de>
+Date:	2009-08-24
+
+    Remove obsolete nds_NFE translation
+
+D	po/nds_NFE.po
+
+commit 1620c40fef4e78e7b7707bd0fda3e6f9a1859df9
+Author: Andre Klapper <a9016009@gmx.de>
+Date:	2009-08-24
+
+    Change nds_NFE to nds as discussed on irc
+
+M	po/LINGUAS
+A	po/nds.po
+
+commit a126e864212fe9876e2f46cd1377ecd2a6e30964
+Author: Denis Arnaud <darnaud@src.gnome.org>
+Date:	2009-08-23
+
+    Updated breton translation
+
+A	po/br.po
+
+commit 2dab42203435559094e180020843fe7f34f2e2d9
+Author: Denis Arnaud <darnaud@src.gnome.org>
+Date:	2009-08-21
+
+    Added br in LINGUAS file
+
+M	po/LINGUAS
+
+commit 41898e14a66b4adf6e5d634582cf7a0b24f25975
+Author: Nils-Christoph Fiedler <linux@medienkompanie.de>
+Date:	2009-08-22
+
+    Added Low German translation
+
+M	po/LINGUAS
+A	po/nds_NFE.po
+
+commit 96127ca05ff47477fd4fe503f69c940bf41622d6
+Author: Frédéric Péters <fpeters@0d.be>
+Date:	2009-08-22
+
+    Remove obsolete Encoding key from desktop file
+
+M	data/alacarte.desktop.in.in
+
+commit 3ae66dd2600c42f05a4f5c7d72ac33dcd842f5b1
+Author: Carles Ferrando <carles.ferrando@gmail.com>
+Date:	2009-08-09
+
+    Added Catalan (Valencian) translation
+
+M	po/LINGUAS
+A	po/ca@valencia.po
+
+commit 12086bd6d1de89d61ba78b8b03b530bb7ab4ab35
+Author: Iestyn Pryce <dylunio@gmail.com>
+Date:	2009-07-31
+
+    Added Welsh (cy) translation.
+
+M	po/LINGUAS
+A	po/cy.po
+
+commit c7405b2aa6d59a537b91268082a4f9fde98e31e7
+Author: Jamil Ahmed <itsjamil@gmail.com>
+Date:	2009-07-28
+
+    Updated Bengali translation
+
+M	po/bn.po
+
+commit a4f373dc03c84f2f29cdb923bab1cca68fb8921f
+Author: Jorge González <jorgegonz@svn.gnome.org>
+Date:	2009-07-07
+
+    Updated Spanish translation
+
+M	po/es.po
+
+commit 219a6a3400579863c2a280d00571f282efd7956d
+Author: Daniel Nylander <po@danielnylander.se>
+Date:	2009-07-07
+
+    Updated Swedish translation
+
+M	po/sv.po
+
+commit f047b36efc90d24dffa175d590a93d4e898da6bd
+Author: Bùi Xuân Dương <buixuanduong1983@gmail.com>
+Date:	2009-06-22
+
+    po/vi.po: updated Vietnamese translation
+
+M	po/vi.po
+
+commit 8638504e7a7807afc64c0cf79b84b2df1b2d3208
+Author: Bùi Xuân Dương <buixuanduong1983@gmail.com>
+Date:	2009-06-22
+
+    po/vi.po: updated Vietnamese translation
+
+M	po/vi.po
+
+commit c341fcc6741cbe05a0a4b609251bd4b53ac9af39
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    post release bump to 0.12.2
+
+M	configure.ac
+
+commit 64964e5e68e707576ab347f74565e5b997d1a43c
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    Forgot to update NEWS and README
+
+M	NEWS
+M	README
+
+commit e794fefdd0ff5f65c3c84c69a069f65d73492100
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    post release bump to 0.12.1
+
+M	configure.ac
+
+commit 7dffab1b68fcd57594d344dddc10d46001fe7f66
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    Remove the ChangeLog file in distclean
+
+M	Makefile.am
+
+commit 6f31ba0005252505b8adba413734af889ebdd2d6
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    Drop libglade dependency
+
+    Use GtkBuilder instead of Glade.
+    Patch by Andreu Correa Casablanca (#577911).
+
+M	Alacarte/MainWindow.py
+M	data/Makefile.am
+D	data/alacarte.glade
+A	data/alacarte.ui
+M	po/POTFILES.in
+
+commit 156cd7f59a3ef413423cbb0cd72f2ccc72f3b1ea
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    Generate the ChangeLog from git log
+
+R100	ChangeLog	ChangeLog.pre-git
+M	Makefile.am
+
+commit a4a5e46721bfa61c8fe7f2462e5b84501c68990e
+Author: Cosimo Cecchi <cosimoc@gnome.org>
+Date:	2009-05-04
+
+    Bump to 0.12.0
+
+M	configure.ac

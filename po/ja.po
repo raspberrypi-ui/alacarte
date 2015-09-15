@@ -1,0 +1,82 @@
+# Japanese message catalog for Alacarte, a simple menu editor for GNOME.
+# Copyright (C) 2006,2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the 'alacarte' package.
+# Satoru SATOH <ss@gnome.gr.jp>, 2006.
+# Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006,2007.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: alacarte master\n"
+"Report-Msgid-Bugs-To: http://bugzilla.gnome.org/enter_bug.cgi?"
+"product=alacarte&keywords=I18N+L10N&component=general\n"
+"POT-Creation-Date: 2011-08-25 10:03+0000\n"
+"PO-Revision-Date: 2011-09-10 23:37+0900\n"
+"Last-Translator: Jiro Matsuzawa <jmatsuzawa@src.gnome.org>\n"
+"Language-Team: Japanese <gnome-translation@gnome.gr.jp>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../Alacarte/MainWindow.py:167
+msgid "Name"
+msgstr "名前"
+
+#: ../Alacarte/MainWindow.py:182
+msgid "Show"
+msgstr "表示"
+
+#: ../Alacarte/MainWindow.py:190
+msgid "Item"
+msgstr "アイテム"
+
+#: ../data/alacarte.desktop.in.in.h:1
+msgid "Change which applications are shown on the main menu"
+msgstr "メニュー・アイテムを編集します"
+
+#: ../data/alacarte.desktop.in.in.h:2 ../data/alacarte.ui.h:2
+msgid "Main Menu"
+msgstr "メイン・メニュー"
+
+#: ../data/alacarte.ui.h:1
+msgid "It_ems:"
+msgstr "アイテム(_E):"
+
+#: ../data/alacarte.ui.h:3
+msgid "Move Down"
+msgstr "下へ"
+
+#: ../data/alacarte.ui.h:4
+msgid "Move Up"
+msgstr "上へ"
+
+#: ../data/alacarte.ui.h:5
+msgid "Ne_w Item"
+msgstr "新しいアイテム(_W)"
+
+#: ../data/alacarte.ui.h:6
+msgid "New _Separator"
+msgstr "新しいセパレーター(_S)"
+
+#: ../data/alacarte.ui.h:7
+msgid "Restore the default menu layout"
+msgstr "デフォルトのメニュー構成に戻します"
+
+#: ../data/alacarte.ui.h:8
+msgid "Revert Changes?"
+msgstr "変更点を元に戻しますか?"
+
+#: ../data/alacarte.ui.h:9
+msgid "Revert all menus to original settings?"
+msgstr "すべてのメニューを元の設定に戻しますか?"
+
+#: ../data/alacarte.ui.h:10
+msgid "_Menus:"
+msgstr "メニュー(_M):"
+
+#: ../data/alacarte.ui.h:11
+msgid "_New Menu"
+msgstr "新しいメニュー(_N)"
+
+#: ../data/alacarte.ui.h:12
+msgid "_Revert to Original"
+msgstr "元に戻す(_R)"

@@ -1,0 +1,86 @@
+# Bulgarian translation of alacarte po-file.
+# Copyright (C) 2005 THE Alacarte'S COPYRIGHT HOLDER
+# Copyright (C) 2006, 2007 Free Software Foundation, Inc.
+# This file is distributed under the same license as the Alacarte package.
+# Stanimir Djevelekov <kori.mendocino@gmail.com>, 2005.
+# Alexander Shopov <ash@kambanaria.org>, 2006, 2007.
+# Vladimir "Kaladan" Petkov <kaladan@gmail.com>, 2006, 2007.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: alacarte master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-06-01 22:00+0300\n"
+"PO-Revision-Date: 2012-06-01 22:00+0300\n"
+"Last-Translator: Alexander Shopov <ash@kambanaria.org>\n"
+"Language-Team: Bulgarian <dict@fsa-bg.org>\n"
+"Language: bg\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../Alacarte/MainWindow.py:155
+msgid "Name"
+msgstr "Име"
+
+#: ../Alacarte/MainWindow.py:168
+msgid "Show"
+msgstr "Показване"
+
+#: ../Alacarte/MainWindow.py:176
+msgid "Item"
+msgstr "Стартер"
+
+#: ../data/alacarte.desktop.in.in.h:1 ../data/alacarte.ui.h:2
+msgid "Main Menu"
+msgstr "Основно меню"
+
+#: ../data/alacarte.desktop.in.in.h:2
+msgid "Add or remove applications from the main menu"
+msgstr "Добавяне или премахване на програмите в основното меню"
+
+#: ../data/alacarte.ui.h:1
+msgid "_Revert to Original"
+msgstr "_Връщане към началните стойности"
+
+#: ../data/alacarte.ui.h:3
+msgid "Restore the default menu layout"
+msgstr "Възстановяване на първоначалната подредба на менюто"
+
+#: ../data/alacarte.ui.h:4
+msgid "_Menus:"
+msgstr "М_енюта:"
+
+#: ../data/alacarte.ui.h:5
+msgid "It_ems:"
+msgstr "С_тартери:"
+
+#: ../data/alacarte.ui.h:6
+msgid "_New Menu"
+msgstr "Ново _меню"
+
+#: ../data/alacarte.ui.h:7
+msgid "Ne_w Item"
+msgstr "Нов _стартер"
+
+#: ../data/alacarte.ui.h:8
+msgid "New _Separator"
+msgstr "Нов _разделител"
+
+#: ../data/alacarte.ui.h:9
+msgid "Move Up"
+msgstr "Нагоре"
+
+#: ../data/alacarte.ui.h:10
+msgid "Move Down"
+msgstr "Надолу"
+
+#: ../data/alacarte.ui.h:11
+msgid "Revert Changes?"
+msgstr "Връщане на промените?"
+
+#: ../data/alacarte.ui.h:12
+msgid "Revert all menus to original settings?"
+msgstr "Връщане на всички менюта към първоначалните им стойности?"

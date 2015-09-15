@@ -1,0 +1,15 @@
+Description: fix TabError when trying to import MainWindow
+Origin: upstream, https://git.gnome.org/browse/alacarte/commit/?id=02582212ecdf0da1
+Last-Update: 2014-10-26
+
+--- a/Alacarte/MainWindow.py
++++ b/Alacarte/MainWindow.py
+@@ -240,7 +240,7 @@
+             menu_tree.get_selection().select_path((0,))
+         else:
+             parent = menus[iter][2]
+-	file_name = util.getUniqueFileId('alacarte-made', '.directory')
++        file_name = util.getUniqueFileId('alacarte-made', '.directory')
+         file_path = os.path.join(util.getUserDirectoryPath(), file_name)
+ 
+         editor = DirectoryEditor(self.main_window, file_path)
