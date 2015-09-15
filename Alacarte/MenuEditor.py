@@ -180,13 +180,14 @@ class MenuEditor(object):
                 self.writeItem(item, NoDisplay=False)
             else:
                 self.addXmlFilename(menu_xml, dom, item.get_desktop_file_id(), 'Exclude')
+                self.writeItem(item, NoDisplay=True)
             self.addXmlTextElement(menu_xml, 'AppDir', util.getUserItemPath(), dom)
         elif isinstance(item, GMenu.TreeDirectory):
             item_iter = item.iter()
             first_child_type = item_iter.next()
             #don't mess with it if it's empty
-            if first_child_type == GMenu.TreeItemType.INVALID:
-                return
+            #if first_child_type == GMenu.TreeItemType.INVALID:
+            #    return
             menu_xml = self.getXmlMenu(self.getPath(item), dom.documentElement, dom)
             for node in self.getXmlNodesByName(['Deleted', 'NotDeleted'], menu_xml):
                 node.parentNode.removeChild(node)

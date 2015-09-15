@@ -1,11 +1,11 @@
 [Desktop Entry]
-_Name=Main Menu
+_Name=Main Menu Editor
 _Comment=Add or remove applications from the main menu
 Exec=alacarte
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GNOME;Settings;DesktopSettings;Utility;
+Categories=GNOME;Settings;DesktopSettings;
 NotShowIn=KDE;
 Icon=alacarte
 X-GNOME-Bugzilla-Bugzilla=GNOME
