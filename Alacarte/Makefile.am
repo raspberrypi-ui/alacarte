@@ -1,6 +1,6 @@
 ## Process this file with automake to produce Makefile.in
 
-appdir = $(pythondir)/Alacarte
+appdir = $(pkgdatadir)/Alacarte
 app_PYTHON = __init__.py MainWindow.py MenuEditor.py ItemEditor.py util.py
 nodist_app_PYTHON = config.py
 
