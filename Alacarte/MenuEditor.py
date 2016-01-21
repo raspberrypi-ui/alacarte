@@ -475,6 +475,12 @@ class MenuEditor(object):
         # add new layout
         node = dom.createElement('DefaultLayout')
         node.setAttribute('inline', 'false')
+        child = dom.createElement('Merge')
+        child.setAttribute('type', 'menus')
+        node.appendChild(child)
+        child2 = dom.createElement('Merge')
+        child2.setAttribute('type', 'files')
+        node.appendChild(child2)
         return element.appendChild(node)
 
     def createLayout(self, items):
