@@ -1,0 +1,20 @@
+diff --git a/data/alacarte.ui b/data/alacarte.ui
+index 4aa5fd0..9b37e92 100644
+--- a/data/alacarte.ui
++++ b/data/alacarte.ui
+@@ -110,6 +110,7 @@
+                     <property name="visible">True</property>
+                     <property name="can_focus">True</property>
+                     <property name="shadow_type">in</property>
++                    <property name="overlay_scrolling">False</property>
+                     <child>
+                       <object class="GtkTreeView" id="menu_tree">
+                         <property name="visible">True</property>
+@@ -129,6 +130,7 @@
+                     <property name="visible">True</property>
+                     <property name="can_focus">True</property>
+                     <property name="shadow_type">in</property>
++                    <property name="overlay_scrolling">False</property>
+                     <child>
+                       <object class="GtkTreeView" id="item_tree">
+                         <property name="visible">True</property>

@@ -110,7 +110,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="shadow_type">in</property>
-                    <property name="overlay_scrolling">False</property>
                     <child>
                       <object class="GtkTreeView" id="menu_tree">
                         <property name="visible">True</property>
@@ -130,7 +129,6 @@
                     <property name="visible">True</property>
                     <property name="can_focus">True</property>
                     <property name="shadow_type">in</property>
-                    <property name="overlay_scrolling">False</property>
                     <child>
                       <object class="GtkTreeView" id="item_tree">
                         <property name="visible">True</property>

@@ -1,3 +1,9 @@
+alacarte (3.11.91-2+rpi3) jessie; urgency=medium
+
+  * Disable overlay scrolling in main window
+
+ -- Simon Long <simon@raspberrypi.org>  Mon, 27 Mar 2017 14:46:30 +0000
+
 alacarte (3.11.91-2+rpi2) jessie; urgency=medium
 
   [ Simon Long ]
