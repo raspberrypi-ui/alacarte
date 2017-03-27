@@ -6,7 +6,7 @@ Source: alacarte
 Section: utils
 Priority: optional
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Uploaders: Andreas Henriksson <andreas@fatal.se>, Dmitry Shachnev <mitya57@debian.org>, Iain Lane <laney@debian.org>, Josselin Mouette <joss@debian.org>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>
+Uploaders: Andreas Henriksson <andreas@fatal.se>, Dmitry Shachnev <mitya57@debian.org>, Iain Lane <laney@debian.org>, Laurent Bigonville <bigon@debian.org>, Michael Biebl <biebl@debian.org>
 Build-Depends: cdbs (>= 0.4.90~),
                autotools-dev,
                debhelper (>= 8),

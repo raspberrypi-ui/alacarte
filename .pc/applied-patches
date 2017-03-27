@@ -2,3 +2,5 @@
 30-python_private_dir.patch
 40-itemeditor-command-validation.patch
 fix_indentation.patch
+60-rpi-tweaks.patch
+61-DefaultLayout-values.patch

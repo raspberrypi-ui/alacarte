@@ -1,3 +1,18 @@
+alacarte (3.11.91-2+rpi2) jessie; urgency=medium
+
+  [ Simon Long ]
+  * Add debian/patches/61-DefaultLayout-values.patch
+    - DefaultLayout populated with default values - LXDE fails to render
+      menu otherwise.
+
+ -- Serge Schneider <serge@raspberrypi.org>  Mon, 25 Jan 2016 12:44:17 +0000
+
+alacarte (3.11.91-2+rpi1) jessie; urgency=low
+
+  * SPL's UI tweaks and fixes
+
+ -- Serge Schneider <serge@raspberrypi.org>  Tue, 15 Sep 2015 15:22:25 +0100
+
 alacarte (3.11.91-2) unstable; urgency=medium
 
   [ Pedro Beja ]

@@ -19,7 +19,7 @@
 #   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 import sys
-sys.path.insert(0,'/usr/local/share/alacarte')
+sys.path.insert(0,'/usr/share/alacarte')
 from Alacarte.MainWindow import main
 
 if __name__ == '__main__':
